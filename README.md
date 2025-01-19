@@ -1,7 +1,7 @@
 
 # SOC Notes
 
-Cette documentation contient des notes et des commandes utiles pour les investigations de sécurité SOC.
+Cette documentation contient des notes et des commandes utiles pour les investigations en sécurité.
 
 ## Contenu
 
