@@ -1,4 +1,3 @@
-
 # Commandes Linux Utiles
 
 ## Navigation et Recherche
@@ -17,3 +16,36 @@
 echo hey > welcome
 cat welcome
 ```
+
+## Commandes Diverses
+
+### Permissions et utilisateurs
+- **Afficher les permissions des fichiers** : `ls -lh`
+- **Changer d'utilisateur** : `su user2`
+
+### Planification de tâches
+- **Modifier les tâches cron** : `crontab -e`
+
+### Gestion des processus
+- **Lister tous les processus** : `ps aux`
+- **Terminer un processus** : `kill [PID]`
+  - **Signaux courants** :
+    - `SIGTERM` : Tente de terminer proprement un processus.
+    - `SIGKILL` : Force l'arrêt immédiat.
+    - `SIGSTOP` : Suspend un processus.
+
+### Gestion des services
+- **Commandes systemctl** :
+  - **Démarrer un service** : `systemctl start [service]`
+  - **Arrêter un service** : `systemctl stop [service]`
+  - **Activer un service au démarrage** : `systemctl enable [service]`
+  - **Désactiver un service au démarrage** : `systemctl disable [service]`
+
+### Gestion des processus en arrière-plan
+- **Exécuter une commande en arrière-plan** : `echo "text" &`
+- **Suspendre une commande active** : `Ctrl + Z`
+- **Ramener un processus en arrière-plan au premier plan** : `fg`
+
+### Éditeurs de texte
+- **Éditer un fichier avec nano** : `nano [fichier]`
+- **Éditer un fichier avec vim** : `vim [fichier]`
