@@ -63,6 +63,4 @@ Une fois toutes les données reçues, il est préférable de fermer la connexion
 ### Illustration : Fermeture de la connexion
 ![TCP Closing Connection](./TCP-Closing-Connection.png)
 
----
 
-Si vous avez d'autres suggestions ou ajustements, dites-le-moi !
