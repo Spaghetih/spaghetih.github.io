@@ -18,13 +18,13 @@ Cette documentation contient des notes et des commandes utiles pour les investig
 
 # Rappel Modèle OSI : Les 7 couches
 
-| Numéro de couche | Nom de la couche           | Fonction principale                                       | Protocoles et standards exemples           |
-|-------------------|----------------------------|----------------------------------------------------------|--------------------------------------------|
-| Couche 7          | Couche application         | Fournit des services et des interfaces aux applications  | HTTP, FTP, DNS, POP3, SMTP, IMAP           |
-| Couche 6          | Couche présentation        | Encodage des données, chiffrement et compression         | Unicode, MIME, JPEG, PNG, MPEG             |
-| Couche 5          | Couche session             | Établit, maintient et synchronise les sessions           | NFS, RPC                                   |
-| Couche 4          | Couche transport           | Communication de bout en bout et segmentation des données| UDP, TCP                                   |
-| Couche 3          | Couche réseau              | Adressage logique et routage entre réseaux               | IP, ICMP, IPSec                            |
-| Couche 2          | Couche liaison de données  | Transfert fiable des données entre nœuds adjacents       | Ethernet (802.3), WiFi (802.11)            |
-| Couche 1          | Couche physique            | Transmission physique des données                        | Signaux électriques, optiques et sans fil  |
-"""
+| Numéro de couche  | Nom de la couche            | Fonction principale                               | Protocoles et standards exemples           |
+|-------------------|----------------------------|---------------------------------------------------|--------------------------------------------|
+| Couche 7          | Application         | Fournit des services et des interfaces aux applications  | HTTP, FTP, DNS, POP3, SMTP, IMAP           |
+| Couche 6          | Présentation        | Encodage des données, chiffrement et compression         | Unicode, MIME, JPEG, PNG, MPEG             |
+| Couche 5          | Session             | Établit, maintient et synchronise les sessions           | NFS, RPC                                   |
+| Couche 4          | Transport           | Communication de bout en bout et segmentation des données| UDP, TCP                                   |
+| Couche 3          | Network             | Adressage logique et routage entre réseaux               | IP, ICMP, IPSec                            |
+| Couche 2          | Data link           | Transfert fiable des données entre nœuds adjacents       | Ethernet (802.3), WiFi (802.11)            |
+| Couche 1          | Physical            | Transmission physique des données                        | Signaux électriques, optiques et sans fil  |
+
