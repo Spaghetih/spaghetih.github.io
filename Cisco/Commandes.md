@@ -57,5 +57,5 @@ show running-config | section dhcp  # Vérifier la config DHCP
 
 ---
 
-🚀 **Votre serveur DHCP est maintenant configuré et fonctionnel !**
+**VLe serveur DHCP est maintenant configuré et fonctionnel**
 
