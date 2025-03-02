@@ -14,8 +14,8 @@ Cette documentation contient des notes et des commandes utiles pour les investig
 - [FireWall](network/firewall.md)
 - [VPN](network/VPN.md)
 - [PowerShell](PowerShell/ps.md)
-- [Cisco](Cisco/DHCP.md)
-
+- [Cisco DHCP](Cisco/DHCP.md)
+- [Cisco Config Router](Cisco/Config/Router.md)
 # Rappel Modèle OSI : Les 7 couches
 
 | Numéro de couche  | Nom de la couche            | Fonction principale                               | Protocoles et standards exemples           |
