@@ -5,6 +5,7 @@ Cette documentation contient des notes et des commandes utiles pour les investig
 
 ## Contenu
 
+- [pfSense WAN+LAN+DMZ](pfSense/Setup_WAN+LAN+DMZ.md)
 - [Commandes Windows](windows/windows_commands.md)
 - [Commandes Linux](linux/linux_commands.md)
 - [Enregistrements DNS](dns/dns_notes.md)
