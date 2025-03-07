@@ -1,62 +1,123 @@
-Lab PfSense WAN + LAN + DMZ
-----
-## VM PFSENSE
+# Lab PfSense WAN + LAN + DMZ
 
-Ajout de 2 cartes réseau en plus :
+## Configuration de la VM PfSense
 
-1. Première carte en réseau en Bridged + Replicate physical network connection state
-2. Deuxième carte réseau en LAN segment nommée **LAN** (pour le réseau local virtuel)
-3. Troisième carte réseau en LAN Segment nommée **DMZ**
+### Ajout des cartes réseau
+1. Ajouter 2 cartes réseau en plus :
+   - Première carte : **Bridged + Replicate physical network connection state** (WAN)
+   - Deuxième carte : **LAN Segment nommé LAN** (réseau local virtuel)
+   - Troisième carte : **LAN Segment nommé DMZ**
 
-Lancer la VM pour faire l'installation.
+2. Lancer la VM et effectuer l'installation de PfSense.
 
-### Configuration post-installation
+### Configuration des interfaces
+Après l'installation, configurer les interfaces :
+- **WAN** → `em0`
+- **LAN** → `em1`
 
-- On a l'adresse WAN -> **em0**
-- On a l'adresse LAN -> **em1**
-
-**Configuration de l'interface LAN**
-
-1. Appuyer sur la touche **2** pour **Set interface IP address**
-2. Entrer le numéro de l'interface à configurer : **2**
-3. **Configure IPv4 address LAN interface via DHCP (y/n)** -> **n**
-4. **Enter the new LAN IPv4 ADDRESS** -> **192.168.100.1**
-5. **Enter the new LAN IPv4 subnet bit count (1 to 32)** -> **24**
-6. **For a WAN enter the LAN IPv4 upstream gateway address, For a LAN press ENTER for none** -> **NONE**
-7. **Configure IPv6** -> **none**
-8. **Enable DHCP on LAN server** -> **no**
-
-----
-## VM Windows
-
-Mettre la carte réseau en **LAN Segment LAN** pour positionner le PC dans la zone.
-
-### Configuration de l'adresse IP statique de Windows
-
-- **Adresse IP** : 192.168.100.2
-- **Masque de sous-réseau** : 255.255.255.0
-- **Passerelle par défaut** : 192.168.100.1 *(IP du PfSense)*
-- **Serveur DNS préféré** : 1.1.1.1 *(ou l'IP de PfSense si on veut un résolveur DNS)*
-
-### Accès à l'interface Web de pfSense
-
-1. Ouvrir un navigateur et entrer **192.168.100.1**
-2. **Configuration pfSense**
-   - **Hostname** : pfSense
-   - **Domain** : home.arpa *(par défaut)*
-   - **Primary DNS** : 1.1.1.1
-   - **Secondary DNS** : 9.9.9.9
-
-Ne pas modifier la configuration du WAN et du LAN (déjà configurée).
+#### Configuration de l'interface LAN
+1. Appuyer sur **2 (Set interface IP address)**
+2. Sélectionner **2 (LAN)**
+3. Configurer IPv4 :
+   - Adresse : `192.168.100.1`
+   - Masque de sous-réseau : `/24`
+   - Passerelle : `NONE`
+4. Configurer IPv6 : `NONE`
+5. Activer le serveur DHCP sur LAN : `NO`
 
 ---
-## pfSense : Configuration du DMZ
 
+## Configuration de la VM Windows (LAN)
+1. Mettre la carte réseau en **LAN Segment : LAN**
+2. Configurer une IP statique :
+   - Adresse IP : `192.168.100.2`
+   - Masque de sous-réseau : `255.255.255.0`
+   - Passerelle : `192.168.100.1` (IP du PfSense)
+   - Serveur DNS préféré : `1.1.1.1`
+3. Accéder à PfSense via le navigateur : `http://192.168.100.1`
+
+### Configuration initiale de PfSense
+- **Hostname** : `pfSense`
+- **Domain** : `home.arpa`
+- **Primary DNS** : `1.1.1.1`
+- **Secondary DNS** : `9.9.9.9`
+- **WAN / LAN** : Déjà configurés
+
+---
+
+## Configuration de la DMZ
+### Assignation de l'interface
 1. Aller dans **Interfaces > Interface Assignments**
-2. Sélectionner la carte réseau **em2** et cliquer sur **Add**
-3. **OPT1** se crée, cliquer dessus
-4. **Description** : **DMZ**
-5. **IPv4 Configuration Type** : **Static IPv4**
-6. **Static IPv4 Configuration** :
-   - **IPv4 Address** : **192.168.200.1 /24**
+2. Ajouter l'interface `em2`
+3. Renommer **OPT1** en `DMZ`
+4. Configurer IPv4 en **Static IPv4** :
+   - Adresse IP : `192.168.200.1/24`
+
+### Configuration de la VM Windows Server (DMZ)
+1. Mettre la carte réseau en **LAN Segment : DMZ**
+2. Configurer une IP statique :
+   - Adresse IP : `192.168.200.2`
+   - Masque de sous-réseau : `255.255.255.0`
+   - Passerelle : `192.168.200.1`
+   - Serveur DNS préféré : `1.1.1.1`
+3. Installer le rôle **Serveur Web IIS**
+
+---
+
+## Configuration des règles de pare-feu
+
+### Règles pour le LAN
+1. Aller dans **Firewall > Rules > LAN**
+2. Ajouter une règle **Block** :
+   - **Protocol** : Any
+   - **Source** : LAN Subnets
+   - **Destination** : DMZ Subnets
+   - **Description** : Bloquer les flux entre le LAN et la DMZ
+
+3. Ajouter une règle **Pass** :
+   - **Source** : LAN Subnets
+   - **Destination** : `192.168.200.2`
+   - **Port** : HTTP (80)
+   - **Description** : Autoriser l'accès au serveur Web depuis le LAN
+
+### Règles pour la DMZ
+1. Aller dans **Firewall > Rules > DMZ**
+2. Ajouter une règle **Block** :
+   - **Protocol** : Any
+   - **Source** : DMZ Subnets
+   - **Destination** : LAN Subnets
+   - **Description** : Bloquer les flux vers le LAN
+
+3. Ajouter une règle **Pass** :
+   - **Source** : DMZ Subnets
+   - **Destination** : Any
+   - **Port** : HTTP (80)
+
+4. Dupliquer la règle précédente en modifiant :
+   - **Port** : HTTPS (443)
+   - **Protocol** : TCP/UDP
+   - **Port** : DNS (53)
+
+---
+
+## Configuration du NAT pour le serveur Web
+1. Aller dans **Firewall > NAT > Port Forward**
+2. Ajouter une règle :
+   - **Interface** : WAN
+   - **Protocol** : TCP
+   - **Destination** : WAN Address
+   - **Port** : HTTP
+   - **Redirect Target IP** : `192.168.200.2`
+   - **Redirect Target Port** : HTTP
+
+---
+
+## Résumé
+- **PfSense** est configuré avec 3 interfaces : WAN, LAN, DMZ
+- **Windows (LAN)** est configuré avec une IP statique et peut accéder à PfSense
+- **Windows Server (DMZ)** est configuré avec une IP statique et héberge un serveur web
+- **Pare-feu** :
+  - Blocage des flux entre LAN et DMZ sauf HTTP (80)
+  - Autorisation des accès HTTP/HTTPS/DNS depuis DMZ vers Internet
+- **NAT** : Redirection du port 80 vers le serveur IIS de la DMZ
 
