@@ -17,7 +17,7 @@ Cette documentation contient des notes et des commandes utiles pour les investig
 - [PowerShell](PowerShell/ps.md)
 - [Cisco DHCP](Cisco/DHCP.md)
 - [Cisco Config Router](Cisco/Config/Router.md)
-- [Conversion Hexa to Décimal](Conversion Hexa to Décimal/Conversion.md)
+- [Conversion Hexa to Décimal](Conversion_Hexa_to_Décimal/Conversion.md)
 # Rappel Modèle OSI : Les 7 couches
 
 | Numéro de couche  | Nom de la couche            | Fonction principale                               | Protocoles et standards exemples           |
