@@ -30,6 +30,26 @@ On divise par **16** et on garde le reste.
 
 ---
 
+## 🔄 Conversion avec un reste décimal
+Quand un nombre décimal divisé par **16** donne une **virgule (fraction)**, on garde uniquement **la partie entière** et on transforme la fraction en un chiffre hexadécimal.
+
+### Exemple : Convertir **254** en hexadécimal
+1. **254 ÷ 16** = **15,875**  
+   - Partie entière = **15** (**F** en hexadécimal)  
+   - Reste = **0,875 × 16 = 14** (**E** en hexadécimal)  
+
+2. En lisant les restes du bas vers le haut :  
+   **254 (décimal) = FE (hexadécimal)** ✅  
+
+### 📌 **Règle Générale :**
+1. **Divise le nombre par 16.**  
+2. **Garde la partie entière** comme quotient.  
+3. **Multiplie la partie fractionnaire** par 16 pour trouver le reste.  
+4. **Répète jusqu'à ce que le quotient soit 0.**  
+5. **Lis les restes du bas vers le haut** pour obtenir la conversion.  
+
+---
+
 ## 🎯 Résumé
 | Conversion | Méthode |
 |------------|------------|
