@@ -40,4 +40,3 @@ On divise par **16** et on garde le reste.
 
 💡 **Astuce :** Sur Windows/Linux, utilisez la commande `echo "ibase=16; 2F" | bc` pour convertir un nombre hexadécimal en décimal.
 
-🔥 N’hésite pas à tester ces conversions par toi-même !
