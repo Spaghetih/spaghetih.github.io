@@ -3,6 +3,12 @@
 ## 📌 Introduction
 Le système **décimal** (base 10) est le système de numération que nous utilisons quotidiennement, tandis que le système **hexadécimal** (base 16) est souvent utilisé en informatique (ex : adresses mémoire, couleurs, etc.).
 
+Le système hexadécimal est basé sur 16 symboles :
+
+Chiffres : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Lettres : A (10), B (11), C (12), D (13), E (14), F (15)
+
 ## 🔄 Conversion Hexadécimal → Décimal
 Chaque chiffre en hexadécimal a une **valeur selon sa position**, basée sur des puissances de 16.
 
