@@ -11,6 +11,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 - [🔧 Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
 - [🛡️ OPNsense + Wazuh (SIEM + Firewall)](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
+- [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Wazuh+Zabbix/Wazuh_Zabbix_Integration.md)
 - [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
 
 ---
