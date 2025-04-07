@@ -5,7 +5,7 @@ Cette documentation contient des notes et des commandes utiles pour les investig
 
 ## Contenu
 
-- [pfSense WAN+LAN+DMZ](pfSense/Setup_WAN+LAN+DMZ.md)
+- [Laboratoire de Sécurité : pfSense WAN+LAN+DMZ](pfSense/Setup_WAN+LAN+DMZ.md)
 - [Laboratoire de Sécurité : OPNsense + Wazuh](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
 - [Laboratoire de Sécurité : Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
 - [Commandes Windows](windows/windows_commands.md)
