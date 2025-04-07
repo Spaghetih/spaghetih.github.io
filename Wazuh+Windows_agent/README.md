@@ -105,10 +105,3 @@ Résultat visible dans le dashboard Wazuh sous `Logs` > `Windows-Suley`.
 - Surveillance RDP / antivirus / journaux d'événements ciblés
 - Automatisation complète via Ansible ou script bash
 
----
-
-## 🤝 Auteur
-
-**Suleyman UNVER**  
-🔧 Réseaux & Cybersécurité junior  
-📍 Gundershoffen, France  
