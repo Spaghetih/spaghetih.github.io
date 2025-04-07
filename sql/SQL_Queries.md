@@ -120,8 +120,3 @@ DELETE FROM users;
 - `LIKE` permet des recherches souples avec `%` comme joker.
 - Toujours utiliser `WHERE` avec `UPDATE` ou `DELETE` pour éviter des catastrophes.
 
----
-
-## 👨‍💻 Auteur
-
-**Suleyman UNVER** – Documentation personnelle sur les bases SQL
