@@ -1,3 +1,4 @@
+
 # 🧠 CyberLab – Documentation & Labs Personnels
 
 Bienvenue dans mon référentiel personnel dédié à la cybersécurité, à l'administration réseau et aux systèmes.  
@@ -41,6 +42,12 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ---
 
+### ⚙️ Automatisation & Ansible
+
+- [🚀 Ansible – Premier Lab Personnel](Ansible/ansible-lab-init.md)
+
+---
+
 ### 💾 Données & Analyse
 
 - [🗃️ Requêtes SQL utiles](sql/SQL_Queries.md)
@@ -75,4 +82,3 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 Créer une **plateforme personnelle de documentation** pour expérimenter, référencer et centraliser mes compétences, dans le but d’évoluer vers un poste de **Security Engineer / Analyste SOC**.
 
 ---
-
