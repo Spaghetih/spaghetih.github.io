@@ -1,4 +1,3 @@
-
 # 🧠 CyberLab – Documentation & Labs Personnels
 
 Bienvenue dans mon référentiel personnel dédié à la cybersécurité, à l'administration réseau et aux systèmes.  
@@ -13,6 +12,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 - [🔧 Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
 - [🛡️ OPNsense + Wazuh (SIEM + Firewall)](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
 - [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Zabbix+Wazuh/Wazuh_Zabbix_Integration.md)
+- [📈 Suricata + Filebeat + Wazuh – Détection d'intrusions & Dashboards](suricata-wazuh/README.md)
 - [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
 
 ---
@@ -81,4 +81,3 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 Créer une **plateforme personnelle de documentation** pour expérimenter, référencer et centraliser mes compétences, dans le but d’évoluer vers un poste de **Security Engineer / Analyste SOC**.
 
----
