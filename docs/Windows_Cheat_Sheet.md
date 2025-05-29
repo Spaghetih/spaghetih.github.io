@@ -16,7 +16,7 @@
 | `help <command>` | Afficher l'aide d'une commande spécifique |
 | `get-alias` | Lister les alias disponibles dans PowerShell |
 | `New-Alias -Name "Show-Files" Get-ChildItem` | Créer un alias personnalisé dans PowerShell |
-| `Get-Module | select Name,ExportedCommands | fl` | Lister les modules importés et leurs commandes associées |
+| `Get-Module \| select Name,ExportedCommands \| fl` | Lister les modules PowerShell importés et leurs commandes associées |
 | `Get-ExecutionPolicy -List` | Voir les politiques d'exécution PowerShell |
 | `Set-ExecutionPolicy Bypass -Scope Process` | Modifier la politique d'exécution PowerShell pour le processus actuel |
 | `wmic os list brief` | Obtenir des informations système via `wmic` |
@@ -30,5 +30,5 @@
 
 ## 📁 Utilisation
 
-Ce document est une référence rapide pour mes travaux en **Windows Administration** et **Sécurité**.  
+Ce document est une référence rapide pour les travaux en **Windows Administration** et **Sécurité**.  
 
