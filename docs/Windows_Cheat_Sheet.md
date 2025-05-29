@@ -8,7 +8,7 @@
 | `Get-WmiObject -Class win32_OperatingSystem` | Obtenir des informations sur le système d'exploitation |
 | `dir C:\ /a` | Lister tous les fichiers et dossiers sur `C:\` |
 | `tree <directory>` | Afficher la structure arborescente d'un répertoire |
-| `tree C:\ /f | more` | Parcourir l'arborescence page par page |
+| `tree C:\ /f \| more` | Parcourir l'arborescence page par page |
 | `icacls <directory>` | Voir les permissions d'un dossier |
 | `icacls C:\users /grant joe:f` | Donner à l'utilisateur `joe` un accès complet sur un dossier |
 | `icacls C:\users /remove joe` | Retirer les permissions de `joe` sur un dossier |
