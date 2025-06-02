@@ -51,7 +51,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 ### 📑 Web & Scripting
 
 - [🧠 JavaScript Essentials – Concepts et Sécurité](JavaScript-Essentials/JavaScript-Essentials.md)
-- 
+  
 ---
 ### 💾 Données & Analyse
 
