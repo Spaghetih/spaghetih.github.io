@@ -19,7 +19,8 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ### 💻 Systèmes & Commandes
 
-- [🪟 Commandes Windows essentielles](windows/windows_commands.md)
+- 🖥️ [Commandes Windows essentielles](windows/windows_commands.md)
+- 📋 [Cheat Sheet Windows Avancée](docs/Windows_Cheat_Sheet.md)
 - [🐧 Commandes Linux essentielles](linux/linux_commands.md)
 - [⚡ PowerShell – Administration & Scripting](PowerShell/ps.md)
 
