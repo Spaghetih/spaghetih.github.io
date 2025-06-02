@@ -54,6 +54,10 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 - [📊 SQL Fundamentals – Concepts et Requêtes](SQL-Fundamentals/SQL-Fundamentals.md)
   
 ---
+### 🖥️ Offensive Security & Post-Exploitation
+
+- [🐚 Shells Overview – Concepts et Types de Shells](Shells-Overview/Shells-Overview.md)
+---
 ### 💾 Données & Analyse
 
 - [🗃️ Requêtes SQL utiles](sql/SQL_Queries.md)
