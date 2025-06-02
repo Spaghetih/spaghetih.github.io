@@ -1,5 +1,5 @@
 
-# 🛡️ TryHackMe — JavaScript Essentials | Cyber Security 101
+# 🛡️ JavaScript Essentials 🛡️
 
 > 💡 Ce guide est une synthèse du module *JavaScript Essentials* de TryHackMe, destiné aux débutants souhaitant comprendre les bases du JavaScript sous l'angle de la cybersécurité. Il couvre les concepts fondamentaux, l'intégration du JS dans le HTML, les fonctions de dialogue, le contournement des structures de contrôle, l'obfuscation, et les bonnes pratiques.
 
