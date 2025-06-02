@@ -52,6 +52,8 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 - [🧠 JavaScript Essentials – Concepts et Sécurité](JavaScript-Essentials/JavaScript-Essentials.md)
 - [📊 SQL Fundamentals – Concepts et Requêtes](SQL-Fundamentals/SQL-Fundamentals.md)
+- [🐍 SQLMap – Introduction aux Injections SQL](SQLMap-Basics/SQLMap-Basics.md)
+
   
 ---
 ### 🖥️ Offensive Security & Post-Exploitation
