@@ -48,9 +48,10 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 - [🚀 Ansible – Premier Lab Personnel](Ansible/ansible-lab-init.md)
 
 ---
-### 📑 Web & Scripting
+### 🗄️ Bases de Données et Web
 
 - [🧠 JavaScript Essentials – Concepts et Sécurité](JavaScript-Essentials/JavaScript-Essentials.md)
+- [📊 SQL Fundamentals – Concepts et Requêtes](SQL-Fundamentals/SQL-Fundamentals.md)
   
 ---
 ### 💾 Données & Analyse
