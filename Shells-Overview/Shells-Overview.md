@@ -1,7 +1,7 @@
 
 # 🐚 Vue d'ensemble des Shells 🐚
 
-> Ce document est une synthèse du module *Shells Overview* de TryHackMe, rédigée en français. Il couvre les différents types de shells utilisés en sécurité offensive, leurs différences et leurs cas d'utilisation.([Medium][1])
+> Ce document est une synthèse du module *Shells Overview* de TryHackMe, rédigée en français. Il couvre les différents types de shells utilisés en sécurité offensive, leurs différences et leurs cas d'utilisation.
 
 ---
 
@@ -9,7 +9,7 @@
 
 * Comprendre les shells en sécurité offensive
 * Configurer et utiliser des shells inversés et des shells liés
-* Déployer des web shells([Medium][1])
+* Déployer des web shells
 
 ---
 
@@ -18,27 +18,27 @@
 * Compréhension de base des réseaux
 * Connaissances fondamentales en sécurité des applications web
 * Maîtrise de base de la ligne de commande
-* Familiarité avec des langages de script comme Bash, Python ou PHP([InfoSec Write-ups][2], [Medium][1])
+* Familiarité avec des langages de script comme Bash, Python ou PHP
 
 ---
 
 ## 🐚 Qu'est-ce qu'un Shell ?
 
-Un shell est un logiciel qui permet à un utilisateur d'interagir avec un système d'exploitation. Il peut s'agir d'une interface graphique, mais il s'agit généralement d'une interface en ligne de commande.([InfoSec Write-ups][2])
+Un shell est un logiciel qui permet à un utilisateur d'interagir avec un système d'exploitation. Il peut s'agir d'une interface graphique, mais il s'agit généralement d'une interface en ligne de commande.
 
-En cybersécurité, un shell fait référence à une session spécifique qu'un attaquant utilise lorsqu'il accède à un système compromis, lui permettant d'exécuter des commandes et des logiciels.([Medium][1])
+En cybersécurité, un shell fait référence à une session spécifique qu'un attaquant utilise lorsqu'il accède à un système compromis, lui permettant d'exécuter des commandes et des logiciels.
 
 ---
 
 ## 🔄 Shell Inversé (Reverse Shell)
 
-Un shell inversé, parfois appelé "connect back shell", est l'une des techniques les plus populaires pour obtenir un accès à un système lors de cyberattaques. Les connexions sont initiées depuis le système cible vers la machine de l'attaquant, ce qui peut aider à éviter la détection par les pare-feu et autres dispositifs de sécurité réseau.([Medium][1])
+Un shell inversé, parfois appelé "connect back shell", est l'une des techniques les plus populaires pour obtenir un accès à un système lors de cyberattaques. Les connexions sont initiées depuis le système cible vers la machine de l'attaquant, ce qui peut aider à éviter la détection par les pare-feu et autres dispositifs de sécurité réseau.
 
 ### 🛠️ Configuration d'un écouteur Netcat (nc)
 
-Pour comprendre comment fonctionne un shell inversé, utilisons l'outil Netcat. Cet utilitaire prend en charge plusieurs systèmes d'exploitation et permet la lecture et l'écriture via un réseau.([Medium][1])
+Pour comprendre comment fonctionne un shell inversé, utilisons l'outil Netcat. Cet utilitaire prend en charge plusieurs systèmes d'exploitation et permet la lecture et l'écriture via un réseau.
 
-Comme mentionné précédemment, un shell inversé se connectera à la machine de l'attaquant. Cette machine attendra une connexion, donc utilisons Netcat pour écouter une connexion en utilisant la commande suivante :([Medium][1])
+Comme mentionné précédemment, un shell inversé se connectera à la machine de l'attaquant. Cette machine attendra une connexion, donc utilisons Netcat pour écouter une connexion en utilisant la commande suivante :
 
 ```bash
 nc -lvnp 443
@@ -74,7 +74,7 @@ nc TARGET_IP 4444
 
 ## 🌐 Web Shells
 
-Un web shell est un script malveillant téléchargé sur un serveur web, permettant à un attaquant d'exécuter des commandes sur le serveur via une interface web. Ils sont souvent écrits en PHP, ASP ou d'autres langages de script côté serveur.([System Weakness][3])
+Un web shell est un script malveillant téléchargé sur un serveur web, permettant à un attaquant d'exécuter des commandes sur le serveur via une interface web. Ils sont souvent écrits en PHP, ASP ou d'autres langages de script côté serveur.
 
 ### 🛠️ Exemple de web shell PHP simple
 
@@ -116,7 +116,7 @@ rlwrap nc -lvnp 443
 
 * **Socat** : Outil similaire à Netcat mais avec plus de fonctionnalités, utile pour établir des connexions chiffrées et des shells plus stables.
 
-* **Msfvenom** : Outil du framework Metasploit pour générer des payloads personnalisés.([System Weakness][3])
+* **Msfvenom** : Outil du framework Metasploit pour générer des payloads personnalisés.
 
   Exemple de génération d'un payload shell inversé pour Linux :
 
@@ -130,11 +130,10 @@ rlwrap nc -lvnp 443
 
 * **Shell** : Interface en ligne de commande permettant d'interagir avec un système d'exploitation.
 
-* **Shell Inversé** : Connexion initiée depuis la machine cible vers l'attaquant.([Medium][1])
+* **Shell Inversé** : Connexion initiée depuis la machine cible vers l'attaquant.
 
 * **Shell Lié** : Connexion initiée depuis l'attaquant vers la machine cible.
 
 * **Web Shell** : Script malveillant sur un serveur web permettant l'exécution de commandes.
 
 * **Stabilisation de Shell** : Techniques pour améliorer l'interactivité et la stabilité d'une session shell.
-
