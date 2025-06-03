@@ -56,9 +56,11 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
   
 ---
-### 🖥️ Offensive Security & Post-Exploitation
+### 🖥️ Sécurité Offensive & Analyse
 
 - [🐚 Shells Overview – Concepts et Types de Shells](Shells-Overview/Shells-Overview.md)
+- [🛡️ FlareVM – Environnement pour l'Analyse de Malware](FlareVM-Arsenal/FlareVM-Arsenal.md)
+
 ---
 ### 💾 Données & Analyse
 
