@@ -62,6 +62,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 - [🐚 Shells Overview – Concepts et Types de Shells](Shells-Overview/Shells-Overview.md)
 - [🛡️ FlareVM – Environnement pour l'Analyse de Malware](FlareVM-Arsenal/FlareVM-Arsenal.md)
+- [🔍 Vulnerability Scanner – Aperçu et Pratique](Vulnerability-Scanner-Overview/Vulnerability-Scanner-Overview.md)
 
 ---
 
