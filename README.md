@@ -1,3 +1,4 @@
+
 # 🧠 CyberLab – Documentation & Labs Personnels
 
 Bienvenue dans mon référentiel personnel dédié à la cybersécurité, à l'administration réseau et aux systèmes.  
@@ -7,13 +8,13 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ## 📁 Contenu principal
 
-### 🔐 Sécurité & SIEM
+### 🌐 Réseaux & Protocoles
 
-- [🔧 Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
-- [🛡️ OPNsense + Wazuh (SIEM + Firewall)](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
-- [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Zabbix+Wazuh/Wazuh_Zabbix_Integration.md)
-- [📈 Suricata + Filebeat + Wazuh – Détection d'intrusions & Dashboards](wazuh-suricata-filebeat-lab/README_suricata_wazuh.md)
-- [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
+- [🌐 Enregistrements DNS](dns/dns_notes.md)
+- [📦 TCP/IP – Packets & Trames](network/Packet&Trames.md)
+- [📡 UDP/IP](network/UDP.md)
+- [🧱 Firewalls – Concepts & Config](network/firewall.md)
+- [🔒 VPN – Fonctionnement et usages](network/VPN.md)
 
 ---
 
@@ -26,42 +27,44 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ---
 
-### 📡 Réseaux & Protocoles
+### ⚙️ Automatisation & Ansible
 
-- [🌐 Enregistrements DNS](dns/dns_notes.md)
-- [📦 TCP/IP – Packets & Trames](network/Packet&Trames.md)
-- [📡 UDP/IP](network/UDP.md)
-- [🧱 Firewalls – Concepts & Config](network/firewall.md)
-- [🔒 VPN – Fonctionnement et usages](network/VPN.md)
+- [🚀 Ansible – Premier Lab Personnel](Ansible/ansible-lab-init.md)
 
 ---
 
-### 🛠️ Cisco – Configuration réseau
+### 🛠️ Cisco – Configuration Réseau
 
 - [DHCP Cisco](Cisco/DHCP.md)
 - [Configuration de routeur Cisco](Cisco/Config/Router.md)
 
 ---
 
-### ⚙️ Automatisation & Ansible
+### 🔐 Sécurité & SIEM
 
-- [🚀 Ansible – Premier Lab Personnel](Ansible/ansible-lab-init.md)
+- [🔧 Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
+- [🛡️ OPNsense + Wazuh (SIEM + Firewall)](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
+- [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Zabbix+Wazuh/Wazuh_Zabbix_Integration.md)
+- [📈 Suricata + Filebeat + Wazuh – Détection d'intrusions & Dashboards](wazuh-suricata-filebeat-lab/README_suricata_wazuh.md)
+- [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
 
 ---
-### 🗄️ Bases de Données et Web
+
+### 🗄️ Bases de Données & Web
 
 - [🧠 JavaScript Essentials – Concepts et Sécurité](JavaScript-Essentials/JavaScript-Essentials.md)
 - [📊 SQL Fundamentals – Concepts et Requêtes](SQL-Fundamentals/SQL-Fundamentals.md)
 - [🐍 SQLMap – Introduction aux Injections SQL](SQLMap-Basics/SQLMap-Basics.md)
 
-  
 ---
+
 ### 🖥️ Sécurité Offensive & Analyse
 
 - [🐚 Shells Overview – Concepts et Types de Shells](Shells-Overview/Shells-Overview.md)
 - [🛡️ FlareVM – Environnement pour l'Analyse de Malware](FlareVM-Arsenal/FlareVM-Arsenal.md)
 
 ---
+
 ### 💾 Données & Analyse
 
 - [🗃️ Requêtes SQL utiles](sql/SQL_Queries.md)
@@ -94,4 +97,3 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 ## 📌 Objectif
 
 Créer une **plateforme personnelle de documentation** pour expérimenter, référencer et centraliser mes compétences, dans le but d’évoluer vers un poste de **Security Engineer / Analyste SOC**.
-
