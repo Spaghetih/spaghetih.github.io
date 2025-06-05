@@ -47,6 +47,11 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 - [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Zabbix+Wazuh/Wazuh_Zabbix_Integration.md)
 - [📈 Suricata + Filebeat + Wazuh – Détection d'intrusions & Dashboards](wazuh-suricata-filebeat-lab/README_suricata_wazuh.md)
 - [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
+---
+
+### 🔓 Authentification – Bypass & Vulnérabilités
+
+- [🔓 Auth Bypass – TryHackMe (Enum, Bruteforce, Logic Flaw, Cookies)](auth-bypass/README.md)
 
 ---
 
