@@ -51,7 +51,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ### 🔓 Authentification – Bypass & Vulnérabilités
 
-- [🔓 Auth Bypass – TryHackMe (Enum, Bruteforce, Logic Flaw, Cookies)](auth-bypass/README.md)
+- [🔓 Auth Bypass – (Enum, Bruteforce, Logic Flaw, Cookies)](auth-bypass/README.md)
 
 ---
 
