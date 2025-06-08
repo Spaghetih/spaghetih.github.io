@@ -24,7 +24,7 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 - 📋 [Cheat Sheet Windows Avancée](docs/Windows_Cheat_Sheet.md)
 - [🐧 Commandes Linux essentielles](linux/linux_commands.md)
 - [⚡ PowerShell – Administration & Scripting](PowerShell/ps.md)
-- 🐍 [Cheat Sheet Python – Bases & Tricks](docs/cheatsheet-python-fr.md)
+- [🐍 Cheat Sheet Python – Bases & Tricks](docs/cheatsheet-python-fr.md)
 
 ---
 
