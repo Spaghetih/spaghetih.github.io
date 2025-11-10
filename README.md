@@ -1,10 +1,4 @@
-
-# 🧠 CyberLab – Documentation & Labs Personnels
-
-Bienvenue dans mon référentiel personnel dédié à la cybersécurité, à l'administration réseau et aux systèmes.  
-Il contient des **labs complets**, des **commandes utiles**, des **configs pratiques** et des **notes techniques** que j'utilise au quotidien dans mon apprentissage et mes tests.
-
----
+# CyberLab – Documentation & Labs
 
 ## 📁 Contenu principal
 
@@ -80,28 +74,14 @@ Il contient des **labs complets**, des **commandes utiles**, des **configs prati
 
 ---
 
-## 🧩 Rappel : Modèle OSI (7 couches)
+## 🧩 Modèle OSI (7 couches)
 
-| Couche | Nom             | Fonction principale                               | Exemples                           |
-|--------|------------------|---------------------------------------------------|------------------------------------|
-| 7      | Application       | Interfaces utilisateur / applis réseau           | HTTP, DNS, FTP, SMTP               |
-| 6      | Présentation      | Encodage, chiffrement, compression                | JPEG, SSL/TLS, MPEG                |
-| 5      | Session           | Maintien des connexions                         | NetBIOS, RPC, SMB                  |
-| 4      | Transport         | Fiabilité, flux, ports                           | TCP, UDP                           |
-| 3      | Réseau            | Adressage IP, routage                           | IP, ICMP, IGMP                     |
-| 2      | Liaison de données| Trames, adressage MAC                           | Ethernet, PPP, VLAN                |
-| 1      | Physique          | Transmission brute, support matériel            | RJ45, Fibre, Wi-Fi                 |
-
----
-
-## 👤 Auteur
-
-**Suleyman UNVER**  
-🔧 Technicien Réseaux & Cybersécurité Junior  
-🎓 Passionné par l’infra, le SOC, les labs techniques et la veille.
-
----
-
-## 📌 Objectif
-
-Créer une **plateforme personnelle de documentation** pour expérimenter, référencer et centraliser mes compétences, dans le but d’évoluer vers un poste de **Security Engineer / Analyste SOC**.
+| Couche | Nom | Fonction principale | Exemples |
+|---|---|---|---|
+| 7 | Application | Interfaces utilisateur / applis réseau | HTTP, DNS, FTP, SMTP |
+| 6 | Présentation | Encodage, chiffrement, compression | JPEG, SSL/TLS, MPEG |
+| 5 | Session | Maintien des connexions | NetBIOS, RPC, SMB |
+| 4 | Transport | Fiabilité, flux, ports | TCP, UDP |
+| 3 | Réseau | Adressage IP, routage | IP, ICMP, IGMP |
+| 2 | Liaison de données | Trames, adressage MAC | Ethernet, PPP, VLAN |
+| 1 | Physique | Transmission brute, support matériel | RJ45, Fibre, Wi-Fi |
