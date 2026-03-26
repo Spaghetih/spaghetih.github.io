@@ -1,87 +1,96 @@
 # CyberLab – Documentation & Labs
 
-## 📁 Contenu principal
+---
 
-### 🌐 Réseaux & Protocoles
+## Reseaux & Protocoles
 
-- [🌐 Enregistrements DNS](dns/dns_notes.md)
-- [📦 TCP/IP – Packets & Trames](network/Packet&Trames.md)
-- [📡 UDP/IP](network/UDP.md)
-- [🧱 Firewalls – Concepts & Config](network/firewall.md)
-- [🔒 VPN – Fonctionnement et usages](network/VPN.md)
+- [DNS – Enregistrements et types](Reseaux/DNS.md)
+- [TCP/IP – Packets & Trames](Reseaux/TCP-IP.md)
+- [UDP/IP](Reseaux/UDP.md)
+- [Firewalls – Concepts & Configuration](Reseaux/Firewall.md)
+- [VPN – Fonctionnement et usages](Reseaux/VPN.md)
+- [HTTP – Structure des requetes](Reseaux/HTTP.md)
 
 ---
 
-### 💻 Systèmes & Commandes
+## Systemes & Commandes
 
-- 🖥️ [Commandes Windows essentielles](windows/windows_commands.md)
-- 📋 [Cheat Sheet Windows Avancée](docs/Windows_Cheat_Sheet.md)
-- [🐧 Commandes Linux essentielles](linux/linux_commands.md)
-- [⚡ PowerShell – Administration & Scripting](PowerShell/ps.md)
-- [🐍 Cheat Sheet Python – Bases & Tricks](docs/cheatsheet-python-fr.md)
+### Linux
+- [Commandes Linux essentielles](Systemes/Linux/Commandes.md)
 
----
+### Windows
+- [Commandes Windows essentielles](Systemes/Windows/Commandes.md)
+- [Commandes Windows (complements)](Systemes/Windows/Commandes-Essentielles.md)
+- [Cheat Sheet Windows avancee](Systemes/Windows/Cheat-Sheet.md)
+- [Gestion des taches Windows](Systemes/Windows/Gestion-Taches.md)
 
-### ⚙️ Automatisation & Ansible
-
-- [🚀 Ansible – Premier Lab Personnel](Ansible/ansible-lab-init.md)
-
----
-
-### 🛠️ Cisco – Configuration Réseau
-
-- [DHCP Cisco](Cisco/DHCP.md)
-- [Configuration de routeur Cisco](Cisco/Config/Router.md)
+### PowerShell
+- [Introduction a PowerShell](Systemes/PowerShell/Introduction.md)
+- [PowerShell – Commandes & Scripting](Systemes/PowerShell/Commandes.md)
 
 ---
 
-### 🔐 Sécurité & SIEM
+## Scripting & Automatisation
 
-- [🔧 Wazuh + Agent Windows](Wazuh+Windows_agent/README.md)
-- [🛡️ OPNsense + Wazuh (SIEM + Firewall)](OPNsense+Wazuh/Lab_OPNsense_Wazuh.md)
-- [📊 Wazuh + Zabbix – Supervision des alertes dans un graphe](Zabbix+Wazuh/Wazuh_Zabbix_Integration.md)
-- [📈 Suricata + Filebeat + Wazuh – Détection d'intrusions & Dashboards](wazuh-suricata-filebeat-lab/README_suricata_wazuh.md)
-- [🌐 pfSense - DMZ, LAN, WAN](pfSense/Setup_WAN+LAN+DMZ.md)
----
-
-### 🔓 Authentification – Bypass & Vulnérabilités
-
-- [🔓 Auth Bypass – (Enum, Bruteforce, Logic Flaw, Cookies)](auth-bypass/README.md)
+- [Python – Cheat Sheet](Scripting/Python-Cheatsheet.md)
+- [JavaScript Essentials – Concepts et Securite](Scripting/JavaScript-Essentials.md)
+- [Ansible – Premier Lab](Scripting/Ansible-Lab.md)
 
 ---
 
-### 🗄️ Bases de Données & Web
+## Bases de Donnees & SQL
 
-- [🧠 JavaScript Essentials – Concepts et Sécurité](JavaScript-Essentials/JavaScript-Essentials.md)
-- [📊 SQL Fundamentals – Concepts et Requêtes](SQL-Fundamentals/SQL-Fundamentals.md)
-- [🐍 SQLMap – Introduction aux Injections SQL](SQLMap-Basics/SQLMap-Basics.md)
-
----
-
-### 🖥️ Sécurité Offensive & Analyse
-
-- [🐚 Shells Overview – Concepts et Types de Shells](Shells-Overview/Shells-Overview.md)
-- [🛡️ FlareVM – Environnement pour l'Analyse de Malware](FlareVM-Arsenal/FlareVM-Arsenal.md)
-- [🔍 Vulnerability Scanner – Aperçu et Pratique](Vulnerability-Scanner-Overview/Vulnerability-Scanner-Overview.md)
-- [🧩 Challenge Tetris – Hackfinity 2025 (Godot Reverse)](Tetris-Hackfinity2025/README.md)
+- [SQL Fondamentaux – Concepts et commandes](Bases-de-Donnees/SQL-Fondamentaux.md)
+- [SQL Basics – SELECT & CRUD](Bases-de-Donnees/SQL-Basics.md)
+- [Requetes SQL utiles](Bases-de-Donnees/Requetes-SQL.md)
+- [SQLMap – Injections SQL](Bases-de-Donnees/SQLMap.md)
 
 ---
 
-### 💾 Données & Analyse
+## Securite Offensive & Analyse
 
-- [🗃️ Requêtes SQL utiles](sql/SQL_Queries.md)
-- [🔢 Conversion Hexa → Décimal](Conversion_Hexa_to_Décimal/Conversion.md)
+- [Shells – Reverse & Bind](Securite-Offensive/Shells.md)
+- [Auth Bypass – Enum, Bruteforce, Logic Flaw, Cookies](Securite-Offensive/Auth-Bypass.md)
+- [XSS Walkthrough – Payloads & Exploitation](Securite-Offensive/XSS-Walkthrough.md)
+- [FlareVM – Environnement d'analyse de malware](Securite-Offensive/FlareVM.md)
+- [Vulnerability Scanner – OpenVAS & concepts](Securite-Offensive/Vulnerability-Scanner.md)
+- [Conversion Hexadecimal / Decimal](Securite-Offensive/Conversion-Hexa.md)
 
 ---
 
-## 🧩 Modèle OSI (7 couches)
+## SIEM & Labs Securite
+
+- [Wazuh + Agent Windows – Deploiement SIEM](SIEM-Labs/Wazuh-Windows-Agent.md)
+- [OPNsense + Wazuh – Firewall & SIEM](SIEM-Labs/OPNsense-Wazuh.md)
+- [Zabbix + Wazuh – Supervision des alertes](SIEM-Labs/Zabbix-Wazuh.md)
+- [Suricata + Filebeat + Wazuh – Detection d'intrusions](SIEM-Labs/Suricata-Wazuh-Filebeat.md)
+- [pfSense – DMZ, LAN, WAN](SIEM-Labs/pfSense-DMZ.md)
+
+---
+
+## Infrastructure
+
+- [Cisco – Configuration DHCP](Infrastructure/Cisco/DHCP.md)
+- [Cisco – Configuration Routeur](Infrastructure/Cisco/Router.md)
+- [HomeLab – Installation RAID 0 (Fujitsu/LSI MegaRAID)](Infrastructure/HomeLab-RAID0.md)
+
+---
+
+## CTF Writeups
+
+- [Anonforce – HackTheBox (Boot2Root, FTP/PGP/Hashcat)](CTF-Writeups/Anonforce-HTB/README.md)
+- [Tetris – Hackfinity 2025 (Godot Reverse Engineering)](CTF-Writeups/Tetris-Hackfinity2025/README.md)
+
+---
+
+## Modele OSI (7 couches)
 
 | Couche | Nom | Fonction principale | Exemples |
-|---|---|---|---|
-| 7 | Application | Interfaces utilisateur / applis réseau | HTTP, DNS, FTP, SMTP |
-| 6 | Présentation | Encodage, chiffrement, compression | JPEG, SSL/TLS, MPEG |
+|--------|-----|---------------------|----------|
+| 7 | Application | Interfaces utilisateur / applis reseau | HTTP, DNS, FTP, SMTP |
+| 6 | Presentation | Encodage, chiffrement, compression | JPEG, SSL/TLS, MPEG |
 | 5 | Session | Maintien des connexions | NetBIOS, RPC, SMB |
-| 4 | Transport | Fiabilité, flux, ports | TCP, UDP |
-| 3 | Réseau | Adressage IP, routage | IP, ICMP, IGMP |
-| 2 | Liaison de données | Trames, adressage MAC | Ethernet, PPP, VLAN |
-| 1 | Physique | Transmission brute, support matériel | RJ45, Fibre, Wi-Fi |
+| 4 | Transport | Fiabilite, flux, ports | TCP, UDP |
+| 3 | Reseau | Adressage IP, routage | IP, ICMP, IGMP |
+| 2 | Liaison de donnees | Trames, adressage MAC | Ethernet, PPP, VLAN |
+| 1 | Physique | Transmission brute, support materiel | RJ45, Fibre, Wi-Fi |
